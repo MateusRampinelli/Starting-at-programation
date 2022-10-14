@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Exercício_Formulários</title>
+  </head>
+  
+  <body>
+    <h2>Cadastro da Liga dos Astronautas</h2>
+    <form> 
+      Nome: <input type="text">
+      <p>
+        Email: <input type="email" name="email" id="email"> -
+        Password: <input type="password">
+      </p>
+      <p>
+        Data de Nascimento: <input type="date"> -
+        Foto: <input type="file"> 
+      </p>
+      <p>
+        Nacionalidade: <input list="Nacionalidade"> - 
+        <datalist id="Nacionalidade"> 
+          <option value="Brasileiro"></option>
+          <option value="Americano"></option>
+          <option value="Russo"></option>
+        </datalist>
+      </input>
+        Gênero: 
+        <input type="radio" id="Femenino" name="Gênero" value="F">
+        <label for="F">F</label> 
+        <input type="radio" id="Masculino" name="Gênero" value="M"> 
+        <label for="M">M</label><br>
+      </p>
+      <p>
+        Suas principais qualidades:
+          <input type="checkbox" id="qualidade1" name="qualidade1" value="Inteligência">
+          <label for="qualidade1"> Inteligência |</label>
+          <input type="checkbox" id="qualidade2" name="qualidade2" value="Resiliência">
+          <label for="qualidade2"> Resiliência |</label>
+          <input type="checkbox" id="qualidade3" name="qualidade3" value="Preparo Físico">
+          <label for="qualidade3"> Preparo Físico |</label>
+          <input type="checkbox" id="qualidade4" name="qualidade4" value="Educação">
+          <label for="qualidade4"> Educação</label>
+      </p>
+      <textarea 
+      name="Pergunta" id="Pergunta" cols="30" rows="10"> Por que você gostaria de ser um astronauta?
+      </textarea>
+      <p>
+        <input type="button" value="Criar">
+      </p>
+
+    </form>
+  </body>
+</html>
